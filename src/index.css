@@ -900,10 +900,11 @@ html, body {
 .label-main {
   position: absolute;
   top: 40px;
+  margin-top: 16px;
   left: 40px;
   font-family: Georgia, serif;
   font-style: italic;
-  font-size: 48px;
+  font-size: 24px;
   letter-spacing: -1px;
   z-index: 99;
   transition: color 1.5s ease;
@@ -913,7 +914,7 @@ html, body {
   position: absolute;
   top: 95px;
   left: 45px;
-  font-size: 11px;
+  font-size: 8.25px;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: bold;

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Google Fonts: Inter para controles, Space Grotesk para títulos e JetBrains Mono para status -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/index.css" />
+    <title>Sinfonia da Mariposa - Campo Florido</title>
+  </head>
+  <body>
+    <!-- Cenário Natural -->
+    <div id="landscape-canvas">
+      <!-- Elementos Geométricos e Tipográficos de Destaque do Artístic Flair Theme -->
+      <div class="ui-frame"></div>
+      <div class="label-main">Mariposa Vívida</div>
+      <div class="label-sub">Campo Florido // Sinfonia Cromática</div>
+      <div class="artistic-render-engine-tag">Render Engine: Artistic_Canvas_V2<br>Coordinates: 42.3601° N, 71.0589° W</div>
+
+      <!-- Fundo de Atmosfera / Céu com Gradiente Dinâmico -->
+      <div id="atmosphere" class="atmosphere-day"></div>
+      
+      <!-- Efeitos de Brilho Celestial (Sol/Lua) -->
+      <div id="celestial-body" class="sun"></div>
+      
+      <!-- Estrelas Noturnas Cintilantes (aparecem à noite) -->
+      <div id="stars-field"></div>
+      
+      <!-- Raios de Luz / Névoa de Clima -->
+      <div id="weather-glow"></div>
+
+      <!-- Camada de Nuvens em Parallax -->
+      <div class="clouds-layer">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+        <div class="cloud cloud-4"></div>
+      </div>
+
+      <!-- Montanhas ao Fundo (Far & Near) -->
+      <div class="scenery-mountains">
+        <div class="mountain-far"></div>
+        <div class="mountain-near"></div>
+      </div>
+
+      <!-- Partículas de Pólen, Sementes e Vaga-lumes no Ar -->
+      <div id="pollen-atmosphere"></div>
+
+      <!-- Solo / Campo de Flores Organizado -->
+      <div id="meadow-floor">
+        <div class="grass-backdrop"></div>
+        <!-- Flores serão injetadas dinamicamente aqui pelo JS -->
+        <div id="flowers-container"></div>
+      </div>
+
+      <!-- Sombreamento Realista da Mariposa projetado no chão -->
+      <div id="mariposa-shadow"></div>
+
+      <!-- MARIPOSA (Estrutura Completa de Vetores de CSS Puro) -->
+      <div id="mariposa-wrapper">
+        <div id="mariposa" class="flight-active">
+          
+          <!-- Antenas e Cabeça -->
+          <div class="m-head-antenna">
+            <div class="m-antenna left">
+              <div class="antenna-segment"></div>
+              <div class="antenna-segment"></div>
+              <div class="antenna-segment">
+                <div class="antenna-tip-glow"></div>
+              </div>
+            </div>
+            <div class="m-antenna right">
+              <div class="antenna-segment"></div>
+              <div class="antenna-segment"></div>
+              <div class="antenna-segment">
+                <div class="antenna-tip-glow"></div>
+              </div>
+            </div>
+            <div class="m-head">
+              <div class="m-eye left"></div>
+              <div class="m-eye right"></div>
+            </div>
+          </div>
+
+          <!-- Tronco e Pernas -->
+          <div class="m-thorax">
+            <div class="m-leg-set left">
+              <div class="m-leg"></div>
+              <div class="m-leg"></div>
+              <div class="m-leg"></div>
+            </div>
+            <div class="m-leg-set right">
+              <div class="m-leg"></div>
+              <div class="m-leg"></div>
+              <div class="m-leg"></div>
+            </div>
+          </div>
+
+          <!-- Abdômen Listrado e Colorido -->
+          <div class="m-abdomen">
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment last-biolum"></div>
+          </div>
+
+          <!-- ASAS DA MARIPOSA (Design Tridimensional) -->
+          <div class="m-wings-container">
+            
+            <!-- Grupo de Asas Esquerdas -->
+            <div class="wings-group left-side">
+              
+              <!-- Asa Superior Esquerda (Forewing) -->
+              <div class="m-wing forewing">
+                <!-- Padrões e Detalhes internos das asas -->
+                <div class="wing-vein main-vein"></div>
+                <div class="wing-vein cross-vein"></div>
+                <!-- Manchas Ornamentais Coloridas e Alegres -->
+                <div class="wing-pattern spot-cyan"></div>
+                <div class="wing-pattern spot-magenta"></div>
+                <div class="wing-pattern spot-yellow"></div>
+                <div class="wing-pattern wing-border"></div>
+                <div class="wing-pattern wing-margin-dots"></div>
+                <div class="glowing-dust-emitter"></div>
+              </div>
+
+              <!-- Asa Inferior Esquerda (Hindwing com rabo swallowtail) -->
+              <div class="m-wing hindwing">
+                <div class="wing-vein"></div>
+                <div class="wing-pattern spot-orange"></div>
+                <div class="wing-pattern spot-purple"></div>
+                <div class="wing-tail"></div>
+              </div>
+            </div>
+
+            <!-- Grupo de Asas Direitas -->
+            <div class="wings-group right-side">
+              
+              <!-- Asa Superior Direita (Forewing) -->
+              <div class="m-wing forewing">
+                <div class="wing-vein main-vein"></div>
+                <div class="wing-vein cross-vein"></div>
+                <div class="wing-pattern spot-cyan"></div>
+                <div class="wing-pattern spot-magenta"></div>
+                <div class="wing-pattern spot-yellow"></div>
+                <div class="wing-pattern wing-border"></div>
+                <div class="wing-pattern wing-margin-dots"></div>
+                <div class="glowing-dust-emitter"></div>
+              </div>
+
+              <!-- Asa Inferior Direita (Hindwing com rabo swallowtail) -->
+              <div class="m-wing hindwing">
+                <div class="wing-vein"></div>
+                <div class="wing-pattern spot-orange"></div>
+                <div class="wing-pattern spot-purple"></div>
+                <div class="wing-tail"></div>
+              </div>
+            </div>
+
+          </div> <!-- m-wings-container -->
+        </div> <!-- mariposa -->
+      </div> <!-- mariposa-wrapper -->
+
+      <!-- HUD/Painel de Controle Flutuante Estilizado -->
+      <div id="gui-container">
+        <header class="title-section">
+          <div class="title-copy">
+            <h2>Mariposa Mágica</h2>
+            <p class="tagline">Animação fluida e som natural interativo</p>
+          </div>
+          <button id="btn-gui-toggle" class="gui-toggle" type="button" aria-expanded="true" aria-controls="gui-body" title="Recolher controles">
+            <span class="gui-toggle-icon" aria-hidden="true">−</span>
+            <span class="gui-toggle-label">Recolher</span>
+          </button>
+        </header>
+
+        <div id="gui-body" class="gui-body">
+          <!-- Seções de Controles -->
+          <div class="gui-grid">
+            <!-- Tempo / Clima -->
+            <div class="control-card">
+              <span class="card-title">Ambiente & Céu</span>
+              <div class="button-group">
+                <button id="btn-day" class="active" title="Sol brilhante e flores vibrantes">☀️ Dia</button>
+                <button id="btn-sunset" title="Cores douradas e quentes">🌇 Crepúsculo</button>
+                <button id="btn-night" title="Flores e vaga-lumes bioluminescentes">🌙 Noite</button>
+              </div>
+            </div>
+
+            <!-- Ritmo de Voo (Slo-mo, Glide, Turbo) -->
+            <div class="control-card">
+              <span class="card-title" id="val-speed">Velocidade de Voo: Normal</span>
+              <div class="slider-wrapper">
+                <input type="range" id="slider-flyspeed" min="1" max="100" value="50" step="1">
+              </div>
+              <div class="speed-modes">
+                <span class="label-muted">Slo-mo</span>
+                <span class="label-muted">Ágil</span>
+              </div>
+            </div>
+
+            <!-- Intensidade do Vento -->
+            <div class="control-card">
+              <span class="card-title" id="val-wind">Vento d'Ar: Brisa Suave (40%)</span>
+              <div class="slider-wrapper">
+                <input type="range" id="slider-windspeed" min="0" max="100" value="40" step="1">
+              </div>
+            </div>
+
+            <!-- Sintetizador e Música -->
+            <div class="control-card">
+              <span class="card-title">Sinfonia Natural</span>
+              <div class="audio-control">
+                <button id="btn-audio" class="audio-active">
+                  <span class="icon">🔊</span>
+                  <span id="txt-audio">Mapeamento de Áudio Ativo</span>
+                </button>
+              </div>
+              <p class="audio-caption">Aproxime a mariposa das flores para tocar os sinos celestes da natureza.</p>
+            </div>
+          </div>
+
+          <!-- Rodapé do Console -->
+          <footer class="gui-footer">
+            <div class="status-panel">
+              <div class="status-indicator">
+                <span class="radar-dot"></span>
+                <span id="tracker-coords">X: 50% | Y: 40%</span>
+              </div>
+              <div class="flower-count">
+                🌱 Flores: <span id="val-flowers">0</span>
+              </div>
+            </div>
+            <div class="instructions-prompt">
+              Mova o mouse ou clique no campo para guiar o voo e plantar novas flores!
+            </div>
+          </footer>
+        </div>
+      </div> <!-- gui-container -->
+    </div> <!-- landscape-canvas -->
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

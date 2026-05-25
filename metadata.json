@@ -1,0 +1,6 @@
+{
+  "name": "Voo da Mariposa",
+  "description": "Uma bela simulação interativa de uma mariposa colorida voando sobre um campo de flores, com sonorização via Web Audio e controle de clima.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -224,7 +224,7 @@ function setupGuiToggle() {
     guiToggle.title = collapsed ? 'Abrir controles' : 'Recolher controles';
 
     if (guiLabel) {
-      guiLabel.textContent = collapsed ? 'Abrir' : 'Recolher';
+      guiLabel.textContent = collapsed ? 'Abrir controles' : 'Recolher';
     }
 
     if (guiIcon) {

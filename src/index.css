@@ -963,7 +963,7 @@ html, body {
 
 #gui-container {
   position: absolute;
-  bottom: 40px;
+  top: 40px;
   right: 40px;
   width: 380px;
   background: rgba(255, 255, 255, 0.95);
@@ -979,12 +979,14 @@ html, body {
 #gui-container.is-collapsed {
   width: fit-content;
   min-width: 0;
-  padding: 12px 12px 12px 16px;
+  padding: 8px 10px 8px 12px;
   border-radius: 999px;
   display: inline-flex;
-  left: 50%;
+  top: 8px;
+  left: 40px;
+  bottom: auto;
   right: auto;
-  transform: translateX(-50%);
+  transform: none;
 }
 
 .title-section {
@@ -1068,15 +1070,16 @@ html, body {
 #gui-container.is-collapsed .gui-toggle {
   border-color: #f43f5e;
   color: #f43f5e;
-  padding: 6px 10px;
-  font-size: 0.66rem;
-  gap: 6px;
+  padding: 5px 9px;
+  font-size: 0.58rem;
+  gap: 5px;
 }
 
 #gui-container.is-collapsed .gui-toggle-icon {
   background: rgba(244, 63, 94, 0.14);
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
+  font-size: 0.82rem;
 }
 
 #gui-container.is-collapsed .gui-toggle .gui-toggle-icon {
@@ -1363,10 +1366,23 @@ html, body {
   #gui-container {
     width: calc(100% - 30px);
     right: 15px;
-    top: auto;
-    bottom: 15px;
+    top: 15px;
+    bottom: auto;
     padding: 12px 15px;
     border-radius: 14px;
+  }
+  #gui-container.is-collapsed {
+    top: 8px;
+    left: 12px;
+    bottom: auto;
+    right: auto;
+    width: auto;
+    max-width: calc(100% - 24px);
+    padding: 6px 8px;
+  }
+  #gui-container.is-collapsed .gui-toggle {
+    font-size: 0.54rem;
+    padding: 4px 8px;
   }
   .title-section .tagline {
     margin-bottom: 8px;
